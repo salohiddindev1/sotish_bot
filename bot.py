@@ -17,6 +17,7 @@ API_TOKEN = "7632611002:AAFHlmp_5TqHMNe8UGVLRXcYLuMzJlTuX3o"
 bot = Bot(token=API_TOKEN, parse_mode="HTML")
 storage = MemoryStorage()
 dp = Dispatcher(bot=bot, storage=storage)
+PROXY_URL = "http://proxy.server:3128"
 
 
 async def on_startup(dp):

@@ -79,3 +79,11 @@
 # a = int(input("Enter son1: "))
 # b = int(input("Enter son2: "))
 # summa(a,b)
+
+def daraja(son: int):
+    daraja(son=5)
+    
+    return son ** 2
+
+def add(a,b):
+    return a+b
