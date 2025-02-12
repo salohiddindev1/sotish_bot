@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 
-from database import ADMINS, delete_product, get_my_product, insert_product, get_my_products, update_product_description, update_product_image
+from database import  delete_product, get_my_product, insert_product, get_my_products, update_product_description, update_product_image
 from database import insert_user, get_user
 from default import phone, menu,product_info
 from inline import done_or_cancel,delete_or_edit
@@ -19,15 +19,6 @@ bot = Bot(token=API_TOKEN, parse_mode="HTML", proxy=PROXY_URL)
 storage = MemoryStorage()
 dp = Dispatcher(bot=bot, storage=storage)
 
-
-async def on_startup(dp):
-	for admin_chat_id in ADMINS:
-		await bot.send_message(chat_id=admin_chat_id, text="Bot has been started")
-
-
-async def on_shutdown(dp):
-	for admin_chat_id in ADMINS:
-		await bot.send_message(chat_id=admin_chat_id, text="Bot has been stopped")
 
 
 @dp.message_handler(commands="start", state="*")

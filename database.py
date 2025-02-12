@@ -1,5 +1,3 @@
-ADMINS = [6323451884, 909437832]
-
 import sqlite3
 
 con = sqlite3.connect("shop.db")
