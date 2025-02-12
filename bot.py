@@ -12,7 +12,7 @@ from state import MyProductState, RegisterState, AddProductState
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = "7632611002:AAFHlmp_5TqHMNe8UGVLRXcYLuMzJlTuX3o"
+API_TOKEN = "7022607074:AAGUHLFroYtPlvSccbLpn7-tw2ZIR0NMMlo"
 
 PROXY_URL = "http://proxy.server:3128"
 bot = Bot(token=API_TOKEN, parse_mode="HTML", proxy=PROXY_URL)
