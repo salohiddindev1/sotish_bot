@@ -195,4 +195,4 @@ async def phone_number_handler(message: types.Message, state: FSMContext):
 
 
 if __name__ == "__main__":
-	executor.start_polling(dispatcher=dp, skip_updates=True, on_shutdown=on_shutdown, on_startup=on_startup)
+	executor.start_polling(dispatcher=dp, skip_updates=True)
